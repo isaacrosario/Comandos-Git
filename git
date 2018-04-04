@@ -1,1 +1,2 @@
-git commit --amend                            //volver en el tiempo
+git commit --amend       //para agregar un nuevo cambio sin tener que agregar otro commit 
+                         //se primero git add y luego amend
