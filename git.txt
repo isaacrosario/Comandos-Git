@@ -1,0 +1,34 @@
+git commit --amend       //para agregar un nuevo cambio sin tener que agregar otro commit 
+                                       //se primero git add y luego amend
+
+git log --oneline        //Mostrar los commit en una sola linea
+
+git log --oneline
+
+git diff commit1 commit2
+
+git log --oneline --decorate 
+git log --oneline --decorate --graph
+
+git diff  HEAD~1 HEAD
+
+git revert  HEAD~1 HEAD
+git revert  commit1 HEAD
+git revert  --no--commit  HEAD
+
+git revert  revert  continue
+
+git branch
+
+git branch new_branch
+git checkout new_branch
+git checkout -b new_branch
+git branch -m oldname new_name
+git branch -d delete_branch
+
+git branch -h //help
+
+
+
+
+

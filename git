@@ -1,4 +1,0 @@
-git commit --amend       //para agregar un nuevo cambio sin tener que agregar otro commit 
-                         //se primero git add y luego amend
-
-git log --oneline        //Mostrar los commit en una sola linea
