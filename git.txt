@@ -1,32 +1,64 @@
-git commit --amend       //para agregar un nuevo cambio sin tener que agregar otro commit 
-                                       //se primero git add y luego amend
+git commit --amend   //para agregar un nuevo cambio sin tener que agregar otro commit 
+                                  //se primero git add y luego amend
 
-git log --oneline        //Mostrar los commit en una sola linea
+git log --oneline                                                            //Mostrar los commit en una sola linea
+git diff commit1 commit2		             //ver diferencia de commit
+git log --oneline --decorate 	    	              //ver commit
+git log --oneline --decorate --graph                              //ver commit
+git log --oneline			              //ver commit
 
-git log --oneline
 
-git diff commit1 commit2
+//==============================REVERT======================
 
-git log --oneline --decorate 
-git log --oneline --decorate --graph
+git diff  HEAD~1 HEAD		       //comparar del commit anterior al actual
+git revert  HEAD~1 HEAD                                  //revertir del commit anterior al actual
+git revert  --no--commit  HEAD                           //revertir el commit al stage
+git revert  revert  continue                                     //poner commit a la reversion
 
-git diff  HEAD~1 HEAD
+//==============================BRANCH=====================
 
-git revert  HEAD~1 HEAD
-git revert  commit1 HEAD
-git revert  --no--commit  HEAD
+git branch				//ver en que rama estoy
+git branch new_branch                                      //crear una rama
+git checkout new_branch		  // cambiarse a una rama
+git checkout -b new_branch                            //crear una rama y cambiarse inmediatamente
+git branch -m oldname new_name                   //cambiar nombre a rama
+git branch -d branch_to_delete                             //borrar rama
+git branch -h                   //help
 
-git revert  revert  continue
 
-git branch
+//=======================ALIAS==============================
 
-git branch new_branch
-git checkout new_branch
-git checkout -b new_branch
-git branch -m oldname new_name
-git branch -d delete_branch
+git config --global alias.nombre_alia "comando"                     // //crear alias
+git config --global --get-regexp alias                          	         //ver alias
+git config --global --unset alias.nombre_del_alia                       //borrar alias
 
-git branch -h //help
+//=======================tag ==============================
+
+git tag nombre_del_tag			//crear tag ligero
+git tag  -a nombre_del_tag			//crear tag serio
+git tag   					//ver tags
+git tag -d nombre_del_tag  			//borrar tag
+
+//=======================stash ==============================
+git stash                                //guardar en el stash
+git stash list                           //ver lo que hay en el stash
+git stash apply                         //sacar archivo del stash
+git stash drop                                //eliminar archivo del stash
+git stash pop                         //sacar y eliminar archivo del stash //apply and drop together
+git stash save  "comentario"   // poner comentario al stash
+
+//=======================pull ==============================
+
+git pull origin master          	//Para extraer datos de un nuevo repositorio
+
+//=======================fetch==============================
+
+git fetch origin master                        //Verifica si hay cambios nuevos y los descarga 
+
+
+//=======================ssh==============================
+
+ ssh-keygen    	      	    //para generar clave ssh
 
 
 
