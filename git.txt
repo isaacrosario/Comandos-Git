@@ -62,12 +62,16 @@ git fetch origin master                        //Verifica si hay cambios nuevos 
 
 
 
-//=====================AvECES SE ME OLVIDA==========================
+//=====================AVECES SE ME OLVIDA==========================
 
 git init
 git add .
 git commit -m "first commit"
 git push -u origin master
+
+//=========================COPY AND PASTE IT========================
+
+git add . & git commit -m "comentario" & git push -u origin master
 
 
 
